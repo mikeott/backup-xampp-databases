@@ -2,7 +2,7 @@
 A one click solution to make backups of your local XAMPP databases.
 
 ## Overview
-This script exports all local XAMPP databases and saves them to a directory of your choice. For optimal performance, it is recommended that the backup destination is part of an existing scheduled backup routine and, if possible, located on a different physical drive. Alternatively, the destination should be any directory that is automatically backed up to the cloud.
+This script exports all local XAMPP databases and saves them to a directory of your choice. For optimal peace-of-mind, it is recommended that the backup destination is part of an existing scheduled backup routine and, if possible, located on a different physical drive. Alternatively, the destination should be any directory that is automatically backed up to the cloud.
 
 ## Configuration
 If you are familiar with PHP, the configuration should be straightforward. Below are the key variables to customise for your setup.
