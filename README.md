@@ -1,5 +1,5 @@
 # backup-xampp-databases
-A one click solution to make a backup of your local XAMPP databases.
+A one click solution to make backups of your local XAMPP databases.
 
 ## How does it work?
 This script will dump all your local XAMPP databases and copy them to a directory of your choosing. Ideally, the databses should be copied to a destination directory that is already included in your sheduled backup routine, and if possible that is also not on the same physical drive.
