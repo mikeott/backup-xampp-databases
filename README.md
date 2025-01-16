@@ -16,7 +16,7 @@ If you are familiar with PHP, the configuration should be straightforward. Below
 </code>
 
 ## Executing the Script Locally
-PlTo run the script locally, place the `index.php` file in your `www` directory under a folder of your choice. For example: `c:/xampp/httpdocs/sql-backups/index.php`. Ensure that you can access it through your browser just like any other local website.
+To run the script locally, place the `index.php` file in your `www` directory under a folder of your choice. For example: `c:/xampp/httpdocs/sql-backups/index.php`. Ensure that you can access it through your browser just like any other local website.
 
 ## Additional Customization Options
 You may want to adjust the $date variable to use a custom <a href="https://www.php.net/manual/en/datetime.format.php">date format</a> that suits your needs.
