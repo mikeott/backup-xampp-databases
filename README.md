@@ -1,13 +1,11 @@
 # backup-xampp-databases
 A one click solution to make backups of your local XAMPP databases.
 
-## How does it work?
-This script will dump all your local XAMPP databases and copy them to a directory of your choosing. Ideally, the databses should be copied to a destination directory that is already included in your sheduled backup routine, and if possible that is also not on the same physical drive.
-
-Altentaivly, the databses should be copied to a destination directory that gets automatcally backed up to the cloud.
+## Overview
+This script exports all local XAMPP databases and saves them to a directory of your choice. For optimal performance, it is recommended that the backup destination is part of an existing scheduled backup routine and, if possible, located on a different physical drive. Alternatively, the destination should be any directory that is automatically backed up to the cloud.
 
 ## Configuration
-If you can read PHP then it's quite obviosu what to do. But for prosperity here are the main variables you need to be concerened with.
+If you are familiar with PHP, the configuration should be straightforward. Below are the key variables to customise for your setup.
 
 <code>/* Config */
     $host                   = 'localhost';                        // Hostname of the MySQL server
@@ -17,14 +15,14 @@ If you can read PHP then it's quite obviosu what to do. But for prosperity here 
     $mysqldump_exe          = 'C:/xampp/mysql/bin/mysqldump.exe'; // Location of the mysqldump.exe file
 </code>
 
-## Executing the script locally
-Place the file index.php in your local `www` directory inside a directory of your choosing. Example: `c:/xampp/httpdocs/sql-backups/index.php` and make sure you can access it in a browser just like your other local sites.
+## Executing the Script Locally
+PlTo run the script locally, place the `index.php` file in your `www` directory under a folder of your choice. For example: `c:/xampp/httpdocs/sql-backups/index.php`. Ensure that you can access it through your browser just like any other local website.
 
-## Other variables to consider
-Recommend chnaging the $date variable to a <a href="https://www.php.net/manual/en/datetime.format.php">date format</a> that is preferrable to you.
+## Additional Customization Options
+You may want to adjust the $date variable to use a custom <a href="https://www.php.net/manual/en/datetime.format.php">date format</a> that suits your needs.
 
-## Exclude system databases
-At line 77 add any databses you want to exlcude into the array.
+## Excluding System Databases
+To exclude specific databases from the backup, add their names to the array at line 77.
 
-## COmpatibiity
-Tested on Windows with PHP 8.0
+## Compatibility
+This script has been tested on Windows with PHP 8.0.
