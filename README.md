@@ -12,7 +12,7 @@ If you are familiar with PHP, the configuration should be straightforward.
     $username               = '';                                 // MySQL server username
     $password               = '';                                 // MySQL server password
     $backup_destination_dir = 'D:\sql-backups';                   // Destination directory to store SQL dumps
-    $mysqldump_exe          = 'C:/xampp/mysql/bin/mysqldump.exe'; // Path to mysqldump.exe executable
+    $mysqldump_exe          = 'C:/xampp/mysql/bin/mysqldump.exe'; // Where the mysqldump.exe executable currently resides.
 </code>
 
 ## Executing the Script Locally
