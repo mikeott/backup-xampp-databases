@@ -6,7 +6,7 @@ This script will dump all your local XAMPP databases and copy them to a director
 
 Altentaivly, the databses should be copied to a destination directory that gets automatcally backed up to the cloud.
 
-## How to configure
+## Configuration
 If you can read PHP then it's quite obviosu what to do. But for prosperity here are the main variables you need to be concerened with.
 
 <code>/* Config */
@@ -16,6 +16,9 @@ If you can read PHP then it's quite obviosu what to do. But for prosperity here 
     $backup_destination_dir = 'D:\sql-backups';                   // Destination directory to send the sql dumps
     $mysqldump_exe          = 'C:/xampp/mysql/bin/mysqldump.exe'; // Location of the mysqldump.exe file
 </code>
+
+## Executing the script locally
+Place the file index.php in your local `www` directory inside a directory of your choosing. Example: `c:/xampp/httpdocs/sql-backups/index.php` and make sure you can access it in a browser just like your other local sites.
 
 ## Other variables to consider
 Recommend chnaging the $date variable to a <a href="https://www.php.net/manual/en/datetime.format.php">date format</a> that is preferrable to you.
