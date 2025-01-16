@@ -22,7 +22,7 @@ To run the script locally, place the `index.php` file in your `httpdocs` directo
 You may want to adjust the $date variable to use a custom <a href="https://www.php.net/manual/en/datetime.format.php">date format</a> that suits your needs.
 
 ## Excluding System Databases
-To exclude specific databases from the backup, add their names to the array at line 77.
+To exclude specific databases from the backup, add their names to the array at line 86.
 
 ## Compatibility
 This script has been tested on Windows with PHP 8.0.
