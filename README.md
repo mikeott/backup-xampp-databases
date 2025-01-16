@@ -9,8 +9,7 @@ Altentaivly, the databses should be copied to a destination directory that gets 
 ## How to configure
 If you can read PHP then it's quite obviosu what to do. But for prosperity here are the main variables you need to be concerened with.
 
-<code>
-    /* Config */
+<code>/* Config */
     $host                   = 'localhost';                        // Hostname of the MySQL server
     $username               = '';                                 // Username of the MySQL server
     $password               = '';                                 // Password of the MySQL server
