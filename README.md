@@ -8,11 +8,11 @@ This script exports all local XAMPP databases and saves them to a directory of y
 If you are familiar with PHP, the configuration should be straightforward. Below are the key variables to customise for your setup.
 
 <code>/* Config */
-    $host                   = 'localhost';                        // Hostname of the MySQL server
-    $username               = '';                                 // Username of the MySQL server
-    $password               = '';                                 // Password of the MySQL server
-    $backup_destination_dir = 'D:\sql-backups';                   // Destination directory to send the sql dumps
-    $mysqldump_exe          = 'C:/xampp/mysql/bin/mysqldump.exe'; // Location of the mysqldump.exe file
+    $host                   = 'localhost';                        // MySQL server hostname
+    $username               = '';                                 // MySQL server username
+    $password               = '';                                 // MySQL server password
+    $backup_destination_dir = 'D:\sql-backups';                   // Destination directory to store SQL dumps
+    $mysqldump_exe          = 'C:/xampp/mysql/bin/mysqldump.exe'; // Path to mysqldump.exe executable
 </code>
 
 ## Executing the Script Locally
