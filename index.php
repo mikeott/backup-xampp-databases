@@ -123,7 +123,7 @@
 
         <!--/ Front-end start /-->
         <h1>Hit the button to start backing up.</h1>
-        <p>Depending on how many databases you have and the size of the, this could take a while.</p>
+        <p>Depending on how many databases you have and the size of them, this could take a while.</p>
 
         <a href="index.php?start=true" class="button">
             Start Backups
