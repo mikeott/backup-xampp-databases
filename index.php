@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XAMPP SQL Backups</title>
+    <title>SQL Backups</title>
     <style>
         body {
             font-family: monospace;
@@ -45,15 +45,15 @@
     if($start) {
         
         /* Config */
-        $host                   = 'localhost';                          // MySQL server hostname
-        $username               = 'root';                               // MySQL server username
-        $password               = '';                                   // MySQL server password
-        $backup_destination_dir = 'D:\www-sql-backups';                 // Destination directory to store SQL dumps
-        $mysqldump_exe          = 'C:/xampp/mysql/bin/mysqldump.exe';   // Path to the mysqldump.exe executable
+        $host                   = 'localhost';                          /* MySQL server hostname */
+        $username               = 'root';                               /* MySQL server username */
+        $password               = '';                                   /* MySQL server password */
+        $backup_destination_dir = 'D:\www-sql-backups';                 /* Destination directory to store SQL dumps */
+        $mysqldump_exe          = 'C:/xampp/mysql/bin/mysqldump.exe';   /* Path to the mysqldump.exe executable */
 
         /* Create a backup directory with today's date */
-        $date       = date('Y-m-d');
-        $backup_dir = $backup_destination_dir . '/' . $date;
+        $date                   = date('Y-m-d');
+        $backup_dir             = $backup_destination_dir . '/' . $date;
 
         if (!file_exists($backup_dir)) {
             if (!mkdir($backup_dir, 0777, true)) {
@@ -74,7 +74,6 @@
 
         if ($result) {
 
-            <!--/ Front-end response /-->
             echo '<h1>Backup Complete.</h1>';
             echo '<p>Take a look in ' . $backup_destination_dir . ' to verify backups were made.</p>';
             echo '<a href="/" class="button">Go back</a>';
@@ -82,12 +81,20 @@
             while ($row = $result->fetch_assoc()) {
                 $db_name = $row['Database'];
                 
-                /* Exclude system databases */
+                /* Exclude databases */
                 if (in_array($db_name, [
                         'information_schema', 
                         'mysql', 
                         'performance_schema',
-                        'phpmyadmin'
+                        'phpmyadmin',
+                        'airport',
+                        'cdi',
+                        'revise-wa',
+                        'rocket-apps',
+                        'wordpress',
+                        'wproject',
+                        'wproject-demo',
+                        'ccp'
                     ])) {
                     continue;
                 }
@@ -121,8 +128,9 @@
 
     } else {  ?>
 
-        <!--/ Front-end start /-->
+        <!--/ Front-end /-->
         <h1>Hit the button to start backing up.</h1>
+        <p>Backups are initially saved to D:\www-sql-backups and then synced to \\192.168.0.254\data\Backups\SQL Backups</p>
         <p>Depending on how many databases you have and the size of the, this could take a while.</p>
 
         <a href="index.php?start=true" class="button">
