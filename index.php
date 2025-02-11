@@ -86,7 +86,8 @@
                 if (in_array($db_name, [
                         'information_schema', 
                         'mysql', 
-                        'performance_schema'
+                        'performance_schema',
+                        'phpmyadmin'
                     ])) {
                     continue;
                 }
