@@ -19,7 +19,7 @@ If you are familiar with PHP, the configuration should be straightforward.
 To run the script locally, place the `index.php` file in your `httpdocs` directory under a folder of your choice. For example: `c:/xampp/httpdocs/sql-backups/index.php`. Ensure that you can access it through your browser just like any other local website.
 
 ## Additional Customisation Options
-You may want to adjust the `$date` variable to use a custom <a href="https://www.php.net/manual/en/datetime.format.php">date format</a> that suits your needs.
+Recommend changing the `$date` variable to use a <a href="https://www.php.net/manual/en/datetime.format.php">date format</a> that suits you.
 
 ## Excluding System Databases
 To exclude specific databases from the backup, add their names to the array at line 86.
