@@ -86,15 +86,7 @@
                         'information_schema', 
                         'mysql', 
                         'performance_schema',
-                        'phpmyadmin',
-                        'airport',
-                        'cdi',
-                        'revise-wa',
-                        'rocket-apps',
-                        'wordpress',
-                        'wproject',
-                        'wproject-demo',
-                        'ccp'
+                        'phpmyadmin'
                     ])) {
                     continue;
                 }
